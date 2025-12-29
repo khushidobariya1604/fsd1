@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let fruits=["a","b"]
+        fruits.push("c")
+        console.log(fruits)
+
+        console.log("------")
+
+        let num=[10,20,20,40]
+        let r=num.pop()
+        console.log(num)
+        console.log(r)
+
+        console.log("------")
+
+        let n=[1,2,3,4,5]
+        let sq=n.map(a => a*a)
+        console.log(sq)
+
+        console.log("------")
+
+        let age=[20,24,16,28,15]
+        let adult=age.filter(age => age>=18)
+        console.log(adult)
+
+        console.log("------")
+
+        let names=["A","B","C"]
+        names.forEach(names => {console.log("Hello "+names)})
+
+        console.log("------")
+
+        let color=["red","Blue","Pink"]
+        console.log(color.includes("red"))
+        console.log(color.includes("yellow"))
+
+        console.log("----------")
+
+        let user=[{id:1,name:"A"},{id:2,name:"B"},{id:3,name:"c"}]
+        let data=user.find(u => u.id===3)
+        console.log(data)
+
+        let arr1=[1,2,3]
+        let arr2=arr1
+        arr2.push(4)
+        console.log(arr1)
+        console.log(arr2)
+    </script>
+</body>
+</html>

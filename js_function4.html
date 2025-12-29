@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function info(fname,lname){
+            var full=fname+" "+lname
+            return full
+        }
+        function hello(){
+            document.write(info('kp','d'))
+        }
+        console.log("------------------")
+
+        let nums=[1,2,3]
+        let out=nums.pop()
+        console.log(out,nums)
+
+        console.log("------------------")
+
+        function demo(a,b=5){
+            return a+b
+        }
+        console.log(demo(3,undefined))
+
+        console.log("------------------")
+
+        var a=true+true+true*3
+        console.log(a)
+
+
+    </script>
+    <input type="button" value="click" onclick="hello()">
+</body>
+</html>

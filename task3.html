@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function registerUser(){
+            let name
+            while(name=="" || name==null || name==undefined)
+            {
+                name=prompt("Enter your name : ")
+            }
+
+            let pwd
+            while(pwd==undefined || pwd==null || pwd.length<8)
+            {
+                pwd=prompt("Enter Password")
+            }
+
+            let conf=confirm("Sure to proceed")
+            if(conf==false) 
+            {
+                alert("Registration cancel")
+                return
+            }
+            else
+            {
+            alert(`registration done !! username=${name}  password=${pwd}`)
+            }
+        }
+        registerUser()
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        for (let i=0;i<3;i++){
+            console.log(i)
+        }
+
+        let j=1
+        while(j<=5){
+            console.log(j)
+            j++
+        }
+
+
+        let obj=["abc","pqr","xyz"]
+        for (let i=0; i<obj.length ;i++){
+            document.write(obj[i]+"<br>")
+        }
+
+        let fruits=["a","b","c","d"]
+        for (let f in  fruits){
+            console.log(f) // returns index
+            console.log(fruits[f]) // returns value
+        }
+
+        let obj1={name:"abc", age:19}
+        for (let key in obj1){
+            console.log(key+" is "+obj1[key])
+        }
+
+    </script>
+</body>
+</html>

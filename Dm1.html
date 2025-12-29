@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a1">Hii</p>
+    <p class="b1">I am class 1</p>
+    <p class="b1">I am  class 2</p>
+    <input type="button" value="Change" onclick="fun()">
+
+    <script type="text/javascript">
+        function fun(){
+        document.getElementById("a1").innerHTML="How are you !!"     
+        let x=document.getElementsByClassName("b1")
+        for(var i=0; i<x.length;i++){
+        x[i].innerHTML="Changed all class"     
+        }
+        }
+    </script>
+</body>
+</html>
