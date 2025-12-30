@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="md(this)" onmouseup="mu(this)"
+    onmouseover="mg(this)"
+    style="background-color: blue; height: 100px ;width: 100px;" >click me</div>
+    <script type="text/javascript">
+        function md(e){
+            e.style.backgroundColor='lightyellow'
+            e.innerHTML="Clicked"
+        }
+         function mu(e){
+            e.style.backgroundColor='lightpink'
+            e.innerHTML="related"
+        }
+        function mg(e){
+            e.style.Height='300px'
+            e.style.Width='300px'
+        }
+    </script>
+</body>
+</html>
