@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p onmouseover="this.style.color='red' ; this.innerHTML='mouse over'">Test</p> -->
+     <p onmouseup="fun(this,'hii')" id="test">Test</p> 
+    <script type="text/javascript">
+        function fun(a,b){
+            a.innerHTML=b
+        }
+    </script>
+
+
+
+    <!-- <p onmousedown="fun()" id="test">Test</p> 
+<script type="text/javascript">
+        function fun(){
+            document.getElementById("test").innerHTML="mouse down"
+        }
+    </script> -->
+</body>
+</html>
