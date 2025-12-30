@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, optio? At iure sint nisi! Doloremque, 
+        similique. Quidem, libero assumenda non facere ex facilis dicta nihil fugit nostrum consectetur pariatur,
+        asperiores veniam tenetur repudiandae ea, in eligendi natus itaque quos similique reiciendis. Modi reiciendis 
+        ullam sit, labore laboriosam dolores beatae iure.
+    </p>
+    <input type="button" value="click" onclick="fun()">
+    <script type="text/javascript">
+        const t=document.querySelector("#a")
+        function fun(){
+            if (t.style.color==="red"){
+                t.style.color="black"
+                t.style.backgroundColor="lightblue"
+            }
+            else{
+                t.style.color="red"
+                t.style.backgroundColor="lightyellow"
+            }
+                     
+        }
+         
+    </script>
+</body>
+</html>
