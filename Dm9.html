@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body >
+    <!-- <div onmousedown="f1(event)" style="height: 100px; width: 100px; background-color: pink;"></div>
+     <script type="text/javascript">
+        function f1(e){
+            let val=e.button
+            switch(val){
+                case 0: 
+                alert("left click");
+                break;
+                case 1: 
+                alert("Middle click");
+                break;
+                case 2: 
+                alert("Right click");
+                break;
+            }
+        }
+    </script> -->
+
+    <button id="btn">Click me </button>
+    <script type="text/javascript">
+        document.getElementById("btn").addEventListener("click",function(){
+            alert("Button Closed")
+        })
+    </script>
+</body>
+</html>

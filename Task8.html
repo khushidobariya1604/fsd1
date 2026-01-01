@@ -1,0 +1,40 @@
+<!-- write a js to handle following mouse events using functions
+1. if mouse is overheading named 'welcome 2026' it should turn yellow if ,ouse goes out then bgcolor turns into cyan
+2. if find btn is clicked then it show date and time info.. (use new Date() method to get time) 
+3. if btn name red is clicked then bgcolor of body should turn red and btn named green is pressed then bg color shouldbe green -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="x">
+    <h1  onmouseover="fun1()" onmouseout="fun2()" id="a">Welcome 2026</h1>
+    <input type="button" name="click" value="click" onclick="fun3()">
+     <input type="button" name="click" value="green" onclick="fun5()">
+
+    <p id="b"></p>
+    <script type="text/javascript">
+        function fun1(){
+            document.getElementById("a").style.color='ligthyellow'
+        }
+        function fun2(){
+            
+            document.getElementById("a").style.backgroundColor='cyan'
+        }
+        function fun3(){
+            let d=new Date()
+            document.getElementById('b').innerHTML=d
+        }
+        function fun4(){
+            i=document.getElementById('x')
+            i.bgColor='lightblue'
+        }
+        function fun5(){
+            document.getElementById("x").style.backgroundColor='green'
+        }
+    </script>
+</body>
+</html>

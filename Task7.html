@@ -1,0 +1,19 @@
+<!-- add 3 text input fiels and perform following task on them 
+1. in a first text field convert entered text into lower case when the value of field is changed using onchange event
+2. in 2nd text field change the bgcolor to yellow when field gets focus along with change in text color to blue while typing
+(using oninput event)
+3. in third text field convert entered text into upper case whn field loses the focus(using onblur event) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onchange="this.value=this.value.toLowerCase()">
+    <input type="text" onfocus="this.style.backgroundColor='lightyellow'" oninput="this.style.color='blue'">
+    <input type="text" onblur="this.value=this.value.toUpperCase()">
+</body>
+</html>
