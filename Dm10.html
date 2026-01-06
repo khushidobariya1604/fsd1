@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="image1.jfif" onsubmit="fun(event)">
+        <input type="submit">
+    </form>
+    <input type="text" id="a">
+
+    <script type="text/javascript">
+        function fun(e){
+            //e.preventDefault()
+            alert("form submission status")
+        }
+
+         const input=document.querySelector("#a")
+        input.addEventListener('keydown',e =>{
+         if(isNaN(e.key)){
+            e.preventDefault()
+
+            }
+        })
+    </script>
+           
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Write js to create 12 digit aadhar number using js validation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="submit"  onclick="fun()">
+    <script type="text/javascript">
+        function fun(){
+            let n=/^\d{12}$/
+            let u=document.getElementById('a').value
+            if(n.test(u)){
+                alert('Perfect')
+
+            }
+            else{
+                alert('Enter perfect value')
+            }
+        }
+    
+    </script>
+</body>
+</html>

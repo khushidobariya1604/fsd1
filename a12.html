@@ -1,0 +1,40 @@
+<!-- write a js to validate username and password. lenght of password must be of 6 to 12 characters .username shold not start
+with @,_ and any number.also check the condition of both the field should not be blank -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="submit"  onclick="fun()">
+    <script type="text/javascript">
+
+        function fun(){
+
+            let pass=/^@|^_|^\d/
+            let u=document.getElementById('a').value
+            let v=document.getElementById('b').value
+            if(v.length==0 || u.length==0){
+                alert('pwd id blank')
+
+            }
+            else if(v.length<6 || v.length>12)
+            {
+                alert("Between 6 to 12")
+            }
+            else{
+                alert('Pwd is strong')
+            }
+            if(pass.test(u)){
+                alert('Enter valid username')
+            }
+        }
+    
+    </script>
+</body>
+</html>
