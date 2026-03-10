@@ -6,36 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <p >Hii</p>
-    <p >How R U ?</p>
-    <input type="button" value="click" onclick="fun()">
-    <input type="button" value="uppercase" onclick="fun1()">
-    <input type="button" value="lowercase" onclick="fun2()">
-    <script type="text/javascript">
-        function fun(){
-              var x=document.querySelectorAll("p")
-        for (var i=0;i<x.length;i++)
-    {
-        x[i].style.backgroundColor="pink"
-        x[i].style.color="blue"
-        x[i].style.fontSize="50px"
-
-    }
-        }
-
-        function fun1(){
-            var x=document.querySelectorAll("p")
-            for(var i=0;i<x.length;i++){
-                x[i].style.textTransform="uppercase"
+    <script>
+        var data={
+            "division1":{
+                name:['x','g','y','a','d'],
+                age:[10,11,10,12,11]
+            },
+            "division2":{
+                name:['p','k','b','n','v'],
+                age:[10,11,10,12,11]
             }
         }
-        function fun2(){
-            var x=document.querySelectorAll("p")
-            for(var i=0;i<x.length;i++){
-                x[i].style.textTransform="lowercase"
-            }
-        }
-      
     </script>
 </body>
 </html>

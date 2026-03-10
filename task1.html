@@ -6,28 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-<script type="text/javascript">
-    let num=[1,2,3,4,5]
-    for (let i=0; i<num.length;i++){
-        let f=num[i]*2
-        document.write(num[i]+" * 2 = "+f+"<br>")
-    }
-
-    var i=5
-    for(var i=0;i<=2;i++)
-    {
-        console.log(i)
-    }
-    console.log(i)
-
-    console.log("--------")
+    <script>
+            const a = {
+            "A" : "LJU",
+            "B" : ["CSE", "IT" , "CE"],
+            "C" : [{"D" : "Hi","E" : ['are', 4, {'F' : ['semester', 'We']} ]}],
+            "G" : {"H" : "students","I" : ["of","!"]},
+            "J" : [{"K" :"Python", "L":"branch"},"FSD-2"]
+}
+document.write(a.C[0].D+a.G.I[1]+" "+a.C[0].E[2].F[1]+" "+a.C[0].E[0]+" "+a.G[0].H
++" "+a.G.I[0]+" "+a.C[0].E[2].F[0]+" ");
     
-    let i1=5
-    for(let i1=0;i1<=2;i1++)
-    {
-        console.log(i1)
-    }
-    console.log(i1)
-</script>
+    </script>
 </body>
 </html>
